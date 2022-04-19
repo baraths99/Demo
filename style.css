@@ -1,25 +1,66 @@
-ul {
-  background-color: #fd7e14;
+.navbar-list {
+  background-color: var(--bg-color);
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 li {
   display: inline;
+  color: white;
+  font-size: larger;
 }
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #fd7e14;
+  background-color: var(--bg-color);
 }
 
-.btn {
-  background-color: #fd7e14;
+.nav-btn {
+  background-color: var(--bg-color);
   border: none;
   color: white;
   font-size: 25px;
   padding: 10px 10px;
   cursor: pointer;
+}
+
+.footer-btn {
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 25px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.theme-btn {
+  width: 3em;
+  height: 3em;
+  padding: 1.6em;
+  border-radius: 50%;
+  cursor: pointer;
+  /* border: none; */
+  background-color: transparent;
+}
+
+body {
+  background-color: #e0e0e0 !important;
+}
+
+:root,
+:root.orange {
+  --bg-color: #fd7e14;
+}
+:root.red {
+  --bg-color: #dc3545;
+}
+
+:root.blue {
+  --bg-color: #007bff;
+}
+:root.green {
+  --bg-color: #007f4f;
 }

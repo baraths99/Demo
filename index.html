@@ -5,24 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="theme.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+   
+    <title>Home</title>
   </head>
+
   <body>
+    
     <header>
+      <!-- home page navbar -->
       <nav>
-        <ul>
+        <ul class="navbar-list">
           <li>
-            <button class="btn"><i class="fa fa-bars"></i></button>
+            <button class="nav-btn"><i class="fa fa-bars"></i></button>
           </li>
           <li>
             <img src="img/logo-fiserv-white.png" alt="fiserv logo" />
           </li>
+          <li>
+            <button class="nav-btn"><i class="far fa-user-circles"></i></button>
+          </li>
           <li style="float: right">
-            <button class="btn"><i class="fa fa-gear"></i></button>
+            <form>
+            <button class="nav-btn" type="submit" formaction="themes.html">
+              <i class="fa fa-gear"></i>
+            </form>
+            </button>
           </li>
         </ul>
       </nav>
@@ -30,6 +48,16 @@
 
     <footer>
       <p></p>
+      <!-- <ul class="navbar-footer"></ul>
+      <li>Wallet</button>
+  
+      </li>
+      <li>
+        <button class="footer-btn">Buy & sell</button>
+      </li>
+      <li>
+        <button class="footer-btn">Swap</button>
+      </li> -->
     </footer>
   </body>
 </html>
