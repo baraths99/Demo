@@ -5,17 +5,19 @@
   padding: 0;
   font-family: sans-serif;
 }
-li {
+.navbar-list li {
   display: inline;
   color: white;
   font-size: larger;
 }
+
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: var(--bg-color);
+  /* border-top: var(--bg-color); */
 }
 
 .nav-btn {
@@ -45,9 +47,53 @@ footer {
   /* border: none; */
   background-color: transparent;
 }
+.crypto-header,
+.transaction-header {
+  padding-bottom: 0px;
+  border-bottom: 2px solid #f60;
+  margin: 0 10px;
+  /* flex: 0 0 auto; */
+  position: relative;
+}
+
+.crypto-header h2,
+.transaction-header h2 {
+  padding: 0;
+  margin-top: 10px;
+  border-bottom: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.container-cryptocards,
+.container-transactioncards {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.cryptocards {
+  background-color: #9b9b9b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 95%;
+  margin: 10px 10px;
+  display: grid;
+  grid-template-columns: 200px 80px 62px;
+}
+
+.cryptocards-btn {
+  margin-top: 25px;
+  background-color: #9b9b9b;
+}
+
+.coin-img {
+  margin: 5px 5px;
+}
 
 body {
   background-color: #e0e0e0 !important;
+  font-family: sans-serif;
 }
 
 :root,
