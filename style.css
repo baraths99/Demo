@@ -50,7 +50,9 @@ footer {
 .crypto-header,
 .transaction-header {
   padding-bottom: 0px;
-  border-bottom: 2px solid #f60;
+  /* border-bottom: 2px solid #f60; */
+  border-bottom: 2px solid var(--border-color);
+
   margin: 0 10px;
   /* flex: 0 0 auto; */
   position: relative;
@@ -74,12 +76,13 @@ footer {
 }
 
 .cryptocards {
-  background-color: #9b9b9b;
+  /* background-color: #9b9b9b; */
+  background-color: #e0e0e0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 95%;
   margin: 10px 10px;
   display: grid;
-  grid-template-columns: 200px 80px 62px;
+  grid-template-columns: 120px 110px 65px 47px;
 }
 
 .cryptocards-btn {
@@ -87,26 +90,40 @@ footer {
   background-color: #9b9b9b;
 }
 
+.transactioncards {
+  background-color: #e0e0e0;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 95%;
+  margin: 10px 10px;
+  display: grid;
+  grid-template-columns: 70px 130px 140px;
+}
+
 .coin-img {
   margin: 5px 5px;
 }
 
 body {
-  background-color: #e0e0e0 !important;
+  background-color: #c2c2c2 !important;
   font-family: sans-serif;
 }
 
 :root,
 :root.orange {
   --bg-color: #fd7e14;
+  --border-color: #fd7e14;
 }
 :root.red {
   --bg-color: #dc3545;
+  --border-color: #dc3534;
 }
 
 :root.blue {
   --bg-color: #007bff;
+  --border-color: #007bff;
 }
 :root.green {
   --bg-color: #007f4f;
+  --border-color: #007f4f;
 }
