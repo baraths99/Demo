@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="theme.js"></script>
+    <script src="sidebar.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,18 +17,27 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-   
+
     <title>Home</title>
   </head>
 
   <body>
-    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a href="crypto.html">Cryptos</a>
+      <a href="themes.html">Themes</a>
+    </div>
     <header>
       <!-- home page navbar -->
       <nav>
         <ul class="navbar-list">
           <li>
-            <button class="nav-btn"><i class="fa fa-bars"></i></button>
+            <button class="nav-btn" onclick="openNav()">
+              <i class="fa fa-bars"></i>
+            </button>
           </li>
           <li>
             <img src="img/logo-fiserv-white.png" alt="fiserv logo" />
@@ -35,19 +45,9 @@
           <li>
             <button class="nav-btn"><i class="far fa-user-circles"></i></button>
           </li>
-          <li style="float: right">
-            <form>
-            <button class="nav-btn" type="submit" formaction="themes.html">
-              <i class="fa fa-gear"></i>
-            </form>
-            </button>
-          </li>
         </ul>
       </nav>
     </header>
-
-    <a href="crypto.html">transaction</a>
-
     <footer>
       <p></p>
       <!-- <ul class="navbar-footer"></ul>
